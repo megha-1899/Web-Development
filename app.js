@@ -12,9 +12,8 @@ app.use("/books", router);
 
 
 mongoose.connect(
-    "mongodb+srv://meghapadsalgi:mT5EWz2RhWEZVQZl@cluster0.rkidlq5.mongodb.net/myDB?retryWrites=true&w=majority"
-    ).then(()=>console.log("Connected to database")).then(()=> {
+    "mongodb+srv://padsalgimegha:wCjzmdLVW4ImhTIH@cluster0.qh7ns.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+).then(()=>console.log("Connected to database"))
+.then(()=>{
     app.listen(5000);
 }).catch((err)=>console.log(err));
-
-//mT5EWz2RhWEZVQZl
